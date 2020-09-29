@@ -252,6 +252,10 @@ const FlexBlock2 = styled.div`
   @media (max-width: 1100px) {
     margin-top: 20px;
   }
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    width: 350px;
+  }
 `
 const Selection = styled.div`
   position: relative;
