@@ -20,20 +20,34 @@ const Contact = () => {
           <FlexBox1>
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
-            <label>Name</label>
-            <input type="text" name="name" id="name" />
-            <label>Email</label>
-            <input type="email" name="email" id="email" />
-            <label>Subject</label>
-            <input type="text" name="subject" id="subject" />
+            <label>
+              Name
+              <br />
+              <Input type="text" name="name" id="name" />
+            </label>
+
+            <label>
+              Email
+              <br />
+              <Input type="email" name="email" id="email" />
+            </label>
+
+            <label>
+              Subject
+              <br />
+              <Input type="text" name="subject" id="subject" />
+            </label>
           </FlexBox1>
           <FlexBox2>
-            <label>Message</label>
-            <textarea name="message" id="message" rows="5" />
-            <FlexContainer>
-              <button type="submit">Send</button>
-              <input type="reset" value="Clear" />
-            </FlexContainer>
+            <label>
+              Message
+              <br />
+              <Input2 name="message" id="message" rows="5" />
+              <FlexContainer>
+                <button type="submit">Send</button>
+                <input type="reset" value="Clear" />
+              </FlexContainer>
+            </label>
           </FlexBox2>
         </FlexContainer1>
       </form>
@@ -89,8 +103,14 @@ const FlexBox2 = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 6%;
-  flex: 0 0 52%;
+  flex: 1 0 52%;
   @media (max-width: 768px) {
     margin-left: 0;
   }
+`
+const Input = styled.input`
+  width: 100%;
+`
+const Input2 = styled.textarea`
+  width: 100%;
 `
