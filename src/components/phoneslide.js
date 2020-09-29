@@ -174,6 +174,7 @@ export default class AsNavFor extends Component {
 }
 const Text = styled.p`
   font-weight: 200;
+  height: auto;
   @media (max-width: 768px) {
     line-height: 24px;
   }
@@ -289,6 +290,7 @@ const Buy = styled.a`
   border: none;
   border-radius: 15px;
   white-space: nowrap;
+  z-index: 4;
   overflow: hidden;
   margin: 5px 15px;
   padding: 5px 15px;
