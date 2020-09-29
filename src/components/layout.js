@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import Nav from "../components/nav"
-import styled from "@emotion/styled"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

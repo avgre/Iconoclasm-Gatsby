@@ -281,6 +281,7 @@ const FlexModule = styled.div`
 `
 const Buy = styled.a`
   font-size: 18px;
+  color: black;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -289,6 +290,7 @@ const Buy = styled.a`
   border-radius: 15px;
   white-space: nowrap;
   overflow: hidden;
+  margin: 5px 15px;
   padding: 5px 15px;
 `
 const Price = styled.h3`
