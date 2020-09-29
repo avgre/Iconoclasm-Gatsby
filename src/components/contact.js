@@ -6,9 +6,9 @@ const Contact = () => {
     <Container>
       <h2>Contact Us:</h2>
       <Text>
-        Email us for any of your questions and concerns! We're also taking
+        Email us for any of your questions and concerns. We're also taking
         requests for more hard to find and unique icons you might need. Future
-        updates will might have one you need!
+        updates might include an icon you want!
       </Text>
       <form
         method="post"
@@ -43,9 +43,9 @@ const Contact = () => {
 export default Contact
 const Text = styled.p`
   font-weight: 200;
-  padding: 20px 0;
+  margin-bottom: 20px;
   @media (max-width: 768px) {
-    line-height: 20px;
+    line-height: 28px;
   }
 `
 const Container = styled.div`

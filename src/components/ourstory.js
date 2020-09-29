@@ -29,7 +29,7 @@ const Logo = styled(OurLogo)`
 
 const StoryDiv = styled.div`
   position: relative;
-  padding: 0 calc((100vw - 1200px) / 2);
+  padding: 0 calc((100vw - 1000px) / 2);
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -75,7 +75,7 @@ const About = () => {
       </StoryTitle>
 
       <Story>
-        After watching that MKBHD video (you know the one) on Youtube and
+        After watching that MKBHD video (you know the one) on Youtube, we
         thought the new iOS 14 homescreens were dope. We worked on
         brainstorming/designing/coding all weekend long and came up with an icon
         set that we liked enough to share!

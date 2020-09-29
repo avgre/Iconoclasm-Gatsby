@@ -7,13 +7,17 @@ const Instructions = () => {
       <h2>Instructions:</h2>
       <InstructDiv>
         <Instruction>
+          Save your new icons to your camera roll/photos/phone. Make sure you
+          have the latest update for iOS 14 installed on your phone as well.
+        </Instruction>
+        <Instruction>
           Open up the Siri Shortcuts app on your iPhone or iPad.
         </Instruction>
         <Instruction>
           Find the + icon on the top right of your screen and give it a tap.
         </Instruction>
         <Instruction>Press the Add Action button.</Instruction>
-        <Instruction>In the searchbar, type in "Open App".</Instruction>
+        <Instruction>Tap the Scripting button.</Instruction>
         <Instruction>
           Select Open App and choose the app you want to customize.
         </Instruction>
@@ -21,12 +25,10 @@ const Instructions = () => {
           Now go back to the top right of your screen and tap the icon with the
           3 dots.
         </Instruction>
+        <Instruction>Tap the "Add to Homescreen" option.</Instruction>
         <Instruction>
-          Here you can edit the temporary icon and replace it with your own by
-          tapping it.
-        </Instruction>
-        <Instruction>
-          In the dropdown find the location of the custom icon and choose it.
+          Under "Homescreen Name and Icon", tap the default icon on the left,
+          and select "choose photo".
         </Instruction>
         <Instruction>
           Now in the text field you can rename the app as is your preference, or

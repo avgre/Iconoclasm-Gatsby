@@ -120,25 +120,25 @@ export default class AsNavFor extends Component {
               {...settings2}
             >
               <Slide2>
-                <Title>A Touch of Color (Dark)</Title>
+                <Title>A Touch of Color - Dark</Title>
                 <Text>
                   Research has shown that color in iconography boosts
                   association and recognizability. Just sayin’.
                 </Text>
                 <FlexModule>
                   <Price>$20</Price>
-                  <Buy>Take My Money</Buy>
+                  <Buy href="https://gum.co/WGTnH">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
               <Slide2>
-                <Title>A Touch of Color (Light)</Title>
+                <Title>A Touch of Color - Light</Title>
                 <Text>
                   Research has shown that color in iconography boosts
                   association and recognizability. Just sayin’.
                 </Text>
                 <FlexModule>
                   <Price>$20</Price>
-                  <Buy>Take My Money</Buy>
+                  <Buy href="https://gum.co/WGTnH">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
               <Slide2>
@@ -150,7 +150,7 @@ export default class AsNavFor extends Component {
                 </Text>
                 <FlexModule>
                   <Price>$15</Price>
-                  <Buy>Take My Money</Buy>
+                  <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
               <Slide2>
@@ -162,7 +162,7 @@ export default class AsNavFor extends Component {
                 </Text>
                 <FlexModule>
                   <Price>$15</Price>
-                  <Buy>Take My Money</Buy>
+                  <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
             </Slider>
@@ -175,7 +175,7 @@ export default class AsNavFor extends Component {
 const Text = styled.p`
   font-weight: 200;
   @media (max-width: 768px) {
-    line-height: 20px;
+    line-height: 24px;
   }
 `
 const Title = styled.div`
@@ -188,7 +188,7 @@ const FlexContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: top;
-  margin-top: 5%;
+  margin-top: 3%;
   padding: 0 calc((100vw - 1200px) / 2);
   @media (max-width: 1100px) {
     flex-direction: column-reverse;
@@ -238,7 +238,7 @@ const Slide = styled.div`
 `
 const Overlay = styled.div`
   position: absolute;
-  top: 70px;
+  top: 90px;
   z-index: 2;
   display: flex;
   width: 100%;
@@ -255,7 +255,7 @@ const FlexBlock2 = styled.div`
 `
 const Selection = styled.div`
   position: relative;
-  top: 15%;
+  top: 18%;
   padding-bottom: 15px;
   @media (max-width: 768px) {
     top: 0%;
@@ -273,7 +273,7 @@ const FlexModule = styled.div`
   display: flex;
   padding: 15px 0px;
 `
-const Buy = styled.button`
+const Buy = styled.a`
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
