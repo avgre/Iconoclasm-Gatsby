@@ -121,11 +121,10 @@ export default class AsNavFor extends Component {
             >
               <Slide2>
                 <Title>A Touch of Color - Dark</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
                 <Text>
                   Research has shown that color in iconography boosts
                   association and recognizability. Just sayin’.
-                  <br />
-                  High-res iOS 14 icon set.
                 </Text>
                 <FlexModule>
                   <Price>$15</Price>
@@ -134,10 +133,10 @@ export default class AsNavFor extends Component {
               </Slide2>
               <Slide2>
                 <Title>A Touch of Color - Light</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
                 <Text>
                   Research has shown that color in iconography boosts
-                  association and recognizability. Just sayin’. <br />
-                  High-res iOS 14 icon set.
+                  association and recognizability. Just sayin’.
                 </Text>
                 <FlexModule>
                   <Price>$15</Price>
@@ -146,11 +145,11 @@ export default class AsNavFor extends Component {
               </Slide2>
               <Slide2>
                 <Title>Matter of Minimalism - Noir</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
                 <Text>
                   “Keep only those things that speak to your heart." - Marie
                   Kondō
-                  <br />A simple black and white icon set. <br />
-                  High-res iOS 14 icon set.
+                  <br />A simple black and white icon set.
                 </Text>
                 <FlexModule>
                   <Price>$10</Price>
@@ -159,11 +158,11 @@ export default class AsNavFor extends Component {
               </Slide2>
               <Slide2>
                 <Title>Matter of Minimalism - Blanche</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
                 <Text>
                   “Keep only those things that speak to your heart." - Marie
                   Kondō
-                  <br />A simple black and white icon set. <br />
-                  High-res iOS 14 icon set.
+                  <br />A simple black and white icon set.
                 </Text>
                 <FlexModule>
                   <Price>$10</Price>
@@ -185,9 +184,13 @@ const Text = styled.p`
   }
 `
 const Title = styled.div`
-  font-weight: 400;
-  font-style: bold;
+  font-weight: 600;
   font-size: 20px;
+`
+const Title2 = styled.div`
+  font-weight: 300;
+  font-style: italic;
+  font-size: 17px;
 `
 
 const FlexContainer = styled.div`
