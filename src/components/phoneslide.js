@@ -11,8 +11,6 @@ import Phone4 from "../components/phone4"
 import styled from "@emotion/styled"
 import ArrowLeft from "../images/handleft.svg"
 import ArrowRight from "../images/handright.svg"
-import HandLeft from "../images/handleft2.svg"
-import HandRight from "../images/handright2.svg"
 
 export default class AsNavFor extends Component {
   constructor(props) {
@@ -75,8 +73,9 @@ export default class AsNavFor extends Component {
       <FlexContainer>
         <FlexBlock1>
           <ArrowDiv>
-            <ArrowRight onClick={this.previous} />
-            <ArrowLeft onClick={this.next} />
+            <HandLeft onClick={this.previous} />
+            <Text>SWIPE</Text>
+            <HandRight onClick={this.next} />
           </ArrowDiv>
           {renderPhone()}
           <Overlay>
@@ -111,7 +110,6 @@ export default class AsNavFor extends Component {
             </Container>
           </Overlay>
         </FlexBlock1>
-
         <FlexBlock2>
           <Selection>
             <Slider
@@ -168,11 +166,6 @@ export default class AsNavFor extends Component {
                 </FlexModule>
               </Slide2>
             </Slider>
-            <Hands>
-              <HandLeft onClick={this.previous} />
-              <Text>SWIPE</Text>
-              <HandRight onClick={this.next} />
-            </Hands>
           </Selection>
         </FlexBlock2>
       </FlexContainer>
@@ -200,41 +193,29 @@ const FlexContainer = styled.div`
   @media (max-width: 1100px) {
     flex-direction: column-reverse;
     align-items: center;
+    height: auto;
   }
 `
-
+const HandLeft = styled(ArrowLeft)``
+const HandRight = styled(ArrowRight)``
 const ArrowDiv = styled.div`
   display: flex;
-  position: absolute;
   justify-content: space-between;
-  width: 500px;
-  left: -75px;
+  position: absolute;
+  width: 140%;
+  left: -20%;
   top: 30%;
   @media (max-width: 1100px) {
-    width: 500px;
-    justify-content: center;
-    left: 0px;
-  }
-`
-const Hands = styled.div`
-  display: none;
-  justify-content: space-between;
-  position: absolute;
-  width: 350px;
-
-  @media (max-width: 1100px) {
-    display: flex;
-    z-index: 3;
-    justify-content: space-between;
-    position: absolute;
-    width: 350px;
-    top: 270px;
+    justify-content: space-around;
+    left: 0;
+    width: 100%;
+    top: -50px;
   }
 `
 const FlexBlock1 = styled.div`
   position: relative;
   display: block;
-  width: 350px;
+  width: 340px;
   margin-top: 50px;
   @media (max-width: 1100px) {
     margin-top: 80px;
@@ -243,10 +224,10 @@ const FlexBlock1 = styled.div`
 
 const Container = styled.div`
   display: block;
-  width: 322px;
+  width: 312px;
 `
 const IconGrid = styled.div`
-  width: 322px;
+  width: 312px;
   padding: 0 5px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -254,7 +235,7 @@ const IconGrid = styled.div`
   grid-gap: 10px;
 `
 const Slide = styled.div`
-  width: 322px;
+  width: 312px;
   height: 300px;
 `
 const Overlay = styled.div`

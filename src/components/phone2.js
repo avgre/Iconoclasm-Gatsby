@@ -8,7 +8,7 @@ const Phone2 = ({ className }) => {
     query {
       placeholderImage: file(relativePath: { eq: "poplight.png" }) {
         childImageSharp {
-          fixed(width: 350, quality: 100) {
+          fixed(width: 340, quality: 100) {
             ...GatsbyImageSharpFixed_noBase64
           }
         }
@@ -26,7 +26,7 @@ const Phone2 = ({ className }) => {
 export default Phone2
 
 const Iphone = styled(Img)`
-  width: 350px;
+  width: 340px;
   display: block;
   z-index: 1;
 `
