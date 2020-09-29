@@ -124,9 +124,11 @@ export default class AsNavFor extends Component {
                 <Text>
                   Research has shown that color in iconography boosts
                   association and recognizability. Just sayin’.
+                  <br />
+                  High-res iOS 14 icon set.
                 </Text>
                 <FlexModule>
-                  <Price>$20</Price>
+                  <Price>$15</Price>
                   <Buy href="https://gum.co/WGTnH">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
@@ -134,10 +136,11 @@ export default class AsNavFor extends Component {
                 <Title>A Touch of Color - Light</Title>
                 <Text>
                   Research has shown that color in iconography boosts
-                  association and recognizability. Just sayin’.
+                  association and recognizability. Just sayin’. <br />
+                  High-res iOS 14 icon set.
                 </Text>
                 <FlexModule>
-                  <Price>$20</Price>
+                  <Price>$15</Price>
                   <Buy href="https://gum.co/WGTnH">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
@@ -146,10 +149,11 @@ export default class AsNavFor extends Component {
                 <Text>
                   “Keep only those things that speak to your heart." - Marie
                   Kondō
-                  <br />A simple black and white icon set.
+                  <br />A simple black and white icon set. <br />
+                  High-res iOS 14 icon set.
                 </Text>
                 <FlexModule>
-                  <Price>$15</Price>
+                  <Price>$10</Price>
                   <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
@@ -158,10 +162,11 @@ export default class AsNavFor extends Component {
                 <Text>
                   “Keep only those things that speak to your heart." - Marie
                   Kondō
-                  <br />A simple black and white icon set.
+                  <br />A simple black and white icon set. <br />
+                  High-res iOS 14 icon set.
                 </Text>
                 <FlexModule>
-                  <Price>$15</Price>
+                  <Price>$10</Price>
                   <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
