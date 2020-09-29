@@ -24,11 +24,11 @@ const AboutText = styled.p`
   font-weight: 100;
   @media (max-width: 1200px) {
     width: 90%;
-    font-size: 18px;
+    font-size: 16px;
   }
   @media (max-width: 768px) {
     width: 100%;
-    line-height: 24px;
+    line-height: 20px;
   }
 `
 
@@ -37,7 +37,10 @@ const About = () => {
     <AboutDiv>
       <AboutText>
         "The destruction of app icon dissonance perpetuated by corporate
-        branding is here." - thesaurus <br /> Reclaim your home screen!
+        branding is here." <br />
+        -our thesaurus
+        <br /> <br />
+        Reclaim your home screen!
       </AboutText>
     </AboutDiv>
   )

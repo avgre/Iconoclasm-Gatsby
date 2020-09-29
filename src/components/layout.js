@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
             padding: 0px;
 
             @media (max-width: 768px) {
-              font-size: 20px;
+              font-size: 16px;
             }
             > div {
               margin-top: 0;

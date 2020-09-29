@@ -1,6 +1,6 @@
-import Img from "gatsby-image"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import styled from "@emotion/styled"
 
 const Phone2 = ({ className }) => {
@@ -8,8 +8,8 @@ const Phone2 = ({ className }) => {
     query {
       placeholderImage: file(relativePath: { eq: "poplight.png" }) {
         childImageSharp {
-          fluid(maxWidth: 350, quality: 100) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 350, quality: 100) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
@@ -18,7 +18,7 @@ const Phone2 = ({ className }) => {
 
   return (
     <Iphone
-      fluid={data.placeholderImage.childImageSharp.fluid}
+      fixed={data.placeholderImage.childImageSharp.fixed}
       className={className}
     />
   )

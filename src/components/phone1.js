@@ -8,8 +8,8 @@ const Phone1 = ({ className }) => {
     query {
       placeholderImage: file(relativePath: { eq: "popdark.png" }) {
         childImageSharp {
-          fluid(maxWidth: 350, quality: 100) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 350, quality: 100) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
@@ -18,7 +18,7 @@ const Phone1 = ({ className }) => {
 
   return (
     <Iphone
-      fluid={data.placeholderImage.childImageSharp.fluid}
+      fixed={data.placeholderImage.childImageSharp.fixed}
       className={className}
     />
   )

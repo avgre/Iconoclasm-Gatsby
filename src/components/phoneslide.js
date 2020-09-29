@@ -39,7 +39,7 @@ export default class AsNavFor extends Component {
   render() {
     const settings1 = {
       className: "center",
-      infinite: false,
+      infinite: true,
       slidesToShow: 1,
       swipeToSlide: true,
       arrows: false,
@@ -74,6 +74,7 @@ export default class AsNavFor extends Component {
         <FlexBlock1>
           <ArrowDiv>
             <HandLeft onClick={this.previous} />
+            <Text>SWIPE</Text>
             <HandRight onClick={this.next} />
           </ArrowDiv>
           {renderPhone()}
@@ -119,7 +120,7 @@ export default class AsNavFor extends Component {
               {...settings2}
             >
               <Slide2>
-                <h2>A Touch of Color (Dark)</h2>
+                <Title>A Touch of Color (Dark)</Title>
                 <Text>
                   Research has shown that color in iconography boosts
                   association and recognizability. Just sayin’.
@@ -130,7 +131,7 @@ export default class AsNavFor extends Component {
                 </FlexModule>
               </Slide2>
               <Slide2>
-                <h2>A Touch of Color (Light)</h2>
+                <Title>A Touch of Color (Light)</Title>
                 <Text>
                   Research has shown that color in iconography boosts
                   association and recognizability. Just sayin’.
@@ -141,12 +142,11 @@ export default class AsNavFor extends Component {
                 </FlexModule>
               </Slide2>
               <Slide2>
-                <h2>Monochromatic Dark</h2>
+                <Title>Matter of Minimalism - Noir</Title>
                 <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat
+                  “Keep only those things that speak to your heart." - Marie
+                  Kondō
+                  <br />A simple black and white icon set.
                 </Text>
                 <FlexModule>
                   <Price>$15</Price>
@@ -154,12 +154,11 @@ export default class AsNavFor extends Component {
                 </FlexModule>
               </Slide2>
               <Slide2>
-                <h2>Monochromatic Light</h2>
+                <Title>Matter of Minimalism - Blanche</Title>
                 <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat
+                  “Keep only those things that speak to your heart." - Marie
+                  Kondō
+                  <br />A simple black and white icon set.
                 </Text>
                 <FlexModule>
                   <Price>$15</Price>
@@ -175,6 +174,27 @@ export default class AsNavFor extends Component {
 }
 const Text = styled.p`
   font-weight: 200;
+  @media (max-width: 768px) {
+    line-height: 20px;
+  }
+`
+const Title = styled.div`
+  font-weight: 400;
+  font-style: bold;
+  font-size: 20px;
+`
+
+const FlexContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: top;
+  margin-top: 5%;
+  padding: 0 calc((100vw - 1200px) / 2);
+  @media (max-width: 1100px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+  }
 `
 const HandLeft = styled(ArrowLeft)``
 const HandRight = styled(ArrowRight)``
@@ -185,42 +205,35 @@ const ArrowDiv = styled.div`
   width: 500px;
   left: -75px;
   top: 30%;
-`
-const FlexModule = styled.div`
-  margin: 5% 0%;
-  display: flex;
-`
-const FlexContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: top;
-  margin-top: 5%;
-  padding: 0 calc((100vw - 1200px) / 2);
+  @media (max-width: 1100px) {
+    padding: 0 130px;
+    top: -50px;
+  }
 `
 const FlexBlock1 = styled.div`
   position: relative;
   display: block;
   width: 350px;
-`
-const FlexBlock2 = styled.div`
-  position: relative;
-  display: block;
-  width: 450px;
+  margin-top: 50px;
+  @media (max-width: 1100px) {
+    margin-top: 80px;
+  }
 `
 
 const Container = styled.div`
   display: block;
-  width: 310px;
+  width: 322px;
 `
 const IconGrid = styled.div`
-  width: 310px;
+  width: 322px;
+  padding: 0 5px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat (4, 1fr);
-  grid-gap: 3%;
+  grid-gap: 10px;
 `
 const Slide = styled.div`
-  width: 310px;
+  width: 322px;
   height: 300px;
 `
 const Overlay = styled.div`
@@ -228,24 +241,37 @@ const Overlay = styled.div`
   top: 70px;
   z-index: 2;
   display: flex;
-  width: 350px;
+  width: 100%;
   justify-content: center;
+`
+const FlexBlock2 = styled.div`
+  position: relative;
+  display: block;
+  width: 450px;
+  align-items: center;
+  @media (max-width: 1100px) {
+    margin-top: 20px;
+  }
 `
 const Selection = styled.div`
   position: relative;
-  top: 20%;
-  height: auto;
+  top: 15%;
+  padding-bottom: 15px;
   @media (max-width: 768px) {
-    padding: 0 3vw;
+    top: 0%;
   }
 `
 const Slide2 = styled.div`
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: column;
   @media (max-width: 768px) {
-    padding: 0 3vw;
+    height: auto;
   }
+`
+const FlexModule = styled.div`
+  display: flex;
+  padding: 15px 0px;
 `
 const Buy = styled.button`
   font-size: 18px;
