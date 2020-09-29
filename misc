@@ -1,0 +1,122 @@
+const Phone = ({ className }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(
+        filter: {
+          extension: { regex: "/(jpg)|(jpeg)|(png)/" }
+          sourceInstanceName: { eq: "backgrounds" }
+        }
+      ) {
+        edges {
+          node {
+            childImageSharp {
+              fluid(maxWidth: 350, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  return data
+}
+{
+  data.allFile.edges.map(({ node }) => {
+    return <Img fluid={node.childImageSharp.fluid} className={className} />
+  })
+}
+const chooseBg = (data, slideIndex) => {
+  data.allFile.edges.map(({ node }) => {
+    if (slideIndex === 0) {
+      return <Img fluid={node.childImageSharp.fluid} className={className} />
+    } else if (slideIndex === 1) {
+      return <Img fluid={node.childImageSharp.fluid} className={className} />
+    } else if (slideIndex === 2) {
+      return <Img fluid={node.childImageSharp.fluid} className={className} />
+    } else if (slideIndex === 3) {
+      return <Img fluid={node.childImageSharp.fluid} className={className} />
+    }
+  })
+}
+
+
+
+module.exports = {
+  siteMetadata: {
+    title: ``,
+    description: ``,
+    author: `Avtar G Dev`,
+  },
+  plugins: [
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto Mono`,
+            variants: [`100`, `200`, `400`, `700`],
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`],
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `black`,
+        path: `${__dirname}/src/black`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `white`,
+        path: `${__dirname}/src/white`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `darkpop`,
+        path: `${__dirname}/src/darkpop`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `lightpop`,
+        path: `${__dirname}/src/lightpop`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/backgrounds`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: `${__dirname}/src/images`,
+        },
+      },
+    },
+  ],
+}
