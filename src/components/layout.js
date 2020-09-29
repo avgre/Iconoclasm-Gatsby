@@ -80,8 +80,7 @@ const Layout = ({ children }) => {
         css={css`
           margin: 0;
           width: 100vw;
-          max-width: 100vw;
-          min-height: 40vh;
+          min-width: 100vw;
         `}
       >
         <Nav />

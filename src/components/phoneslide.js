@@ -11,6 +11,8 @@ import Phone4 from "../components/phone4"
 import styled from "@emotion/styled"
 import ArrowLeft from "../images/handleft.svg"
 import ArrowRight from "../images/handright.svg"
+import HandLeft from "../images/handleft2.svg"
+import HandRight from "../images/handright2.svg"
 
 export default class AsNavFor extends Component {
   constructor(props) {
@@ -73,9 +75,8 @@ export default class AsNavFor extends Component {
       <FlexContainer>
         <FlexBlock1>
           <ArrowDiv>
-            <HandLeft onClick={this.previous} />
-            <Text>SWIPE</Text>
-            <HandRight onClick={this.next} />
+            <ArrowRight onClick={this.previous} />
+            <ArrowLeft onClick={this.next} />
           </ArrowDiv>
           {renderPhone()}
           <Overlay>
@@ -110,6 +111,7 @@ export default class AsNavFor extends Component {
             </Container>
           </Overlay>
         </FlexBlock1>
+
         <FlexBlock2>
           <Selection>
             <Slider
@@ -166,6 +168,11 @@ export default class AsNavFor extends Component {
                 </FlexModule>
               </Slide2>
             </Slider>
+            <Hands>
+              <HandLeft onClick={this.previous} />
+              <Text>SWIPE</Text>
+              <HandRight onClick={this.next} />
+            </Hands>
           </Selection>
         </FlexBlock2>
       </FlexContainer>
@@ -193,21 +200,35 @@ const FlexContainer = styled.div`
   @media (max-width: 1100px) {
     flex-direction: column-reverse;
     align-items: center;
-    height: auto;
   }
 `
-const HandLeft = styled(ArrowLeft)``
-const HandRight = styled(ArrowRight)``
+
 const ArrowDiv = styled.div`
   display: flex;
-  justify-content: space-between;
   position: absolute;
+  justify-content: space-between;
   width: 500px;
   left: -75px;
   top: 30%;
   @media (max-width: 1100px) {
-    padding: 0 130px;
-    top: -50px;
+    width: 500px;
+    justify-content: center;
+    left: 0px;
+  }
+`
+const Hands = styled.div`
+  display: none;
+  justify-content: space-between;
+  position: absolute;
+  width: 350px;
+
+  @media (max-width: 1100px) {
+    display: flex;
+    z-index: 3;
+    justify-content: space-between;
+    position: absolute;
+    width: 350px;
+    top: 270px;
   }
 `
 const FlexBlock1 = styled.div`
