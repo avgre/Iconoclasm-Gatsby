@@ -20,7 +20,7 @@ const IconsDark = ({ className }) => {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 100, quality: 100) {
+              fluid(maxWidth: 70, quality: 60) {
                 ...GatsbyImageSharpFluid
               }
             }

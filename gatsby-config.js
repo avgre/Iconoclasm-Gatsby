@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Iconoclasm`,
+    title: `Iconoclasm for iOS 14`,
     description: `Iconoclasm is a collection of high res iOS 14 icon packs, to customize your iPhone homescreen and give your apps a new look.`,
     author: `AvGre Dev, Brain of Laraine`,
   },
@@ -9,6 +9,15 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/favicon.svg`,
+        icon_options: {
+          purpose: `maskable`,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
