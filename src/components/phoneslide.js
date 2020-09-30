@@ -12,6 +12,15 @@ import styled from "@emotion/styled"
 import ArrowLeft from "../images/handleft.svg"
 import ArrowRight from "../images/handright.svg"
 
+//const Phone1 = React.lazy(() => import("../components/phone1"))
+//const Phone2 = React.lazy(() => import("../components/phone2"))
+//const Phone3 = React.lazy(() => import("../components/phone3"))
+//const Phone4 = React.lazy(() => import("../components/phone4"))
+//const IconsDark = React.lazy(() => import("../components/iconsDark"))
+//const IconsLight = React.lazy(() => import("../components/iconsLight"))
+//const IconsDarkPop = React.lazy(() => import("../components/iconsDarkPop"))
+//const IconsLightPop = React.lazy(() => import("../components/iconsLightPop"))
+
 export default class AsNavFor extends Component {
   constructor(props) {
     super(props)
