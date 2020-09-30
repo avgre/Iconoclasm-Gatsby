@@ -41,20 +41,12 @@ export default class AsNavFor extends Component {
       className: "center",
       infinite: true,
       slidesToShow: 1,
+      lazyLoad: true,
       swipeToSlide: true,
       arrows: false,
       afterChange: () =>
         this.setState(state => ({ updateCount: this.state.updateCount + 1 })),
       beforeChange: (current, next) => this.setState({ slideIndex: next }),
-    }
-    console.log(this.state.slideIndex)
-    const settings2 = {
-      className: "center",
-      infinite: true,
-      slidesToShow: 1,
-      swipeToSlide: true,
-      arrows: false,
-      fade: true,
     }
     let slideIndex = this.state.slideIndex
     console.log(slideIndex)
@@ -69,6 +61,17 @@ export default class AsNavFor extends Component {
         return <Phone3 />
       }
     }
+    console.log(this.state.slideIndex)
+    const settings2 = {
+      className: "center",
+      lazyLoad: true,
+      infinite: true,
+      slidesToShow: 1,
+      swipeToSlide: true,
+      arrows: false,
+      fade: true,
+    }
+
     return (
       <FlexContainer>
         <FlexBlock1>
