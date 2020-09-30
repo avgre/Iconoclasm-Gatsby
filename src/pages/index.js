@@ -6,6 +6,11 @@ import Contact from "../components/contact"
 import OurStory from "../components/ourstory"
 import SEO from "../components/seo"
 
+import styled from "@emotion/styled"
+
+const Loader = styled.div`
+  min-height: 100vh;
+`
 const PhoneSlide = React.lazy(() => import("../components/phoneslide"))
 export default function Home() {
   const isSSR = typeof window === "undefined"
@@ -15,7 +20,7 @@ export default function Home() {
       <Layout>
         <About />
         {!isSSR && (
-          <React.Suspense fallback={<div />}>
+          <React.Suspense fallback={<Loader />}>
             <PhoneSlide />
           </React.Suspense>
         )}

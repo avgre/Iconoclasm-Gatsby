@@ -1,9 +1,6 @@
 import React, { Component } from "react"
 import Slider from "react-slick"
 import IconsDark from "../components/iconsDark"
-//import IconsLight from "../components/iconsLight"
-//import IconsDarkPop from "../components/iconsDarkPop"
-//import IconsLightPop from "../components/iconsLightPop"
 import Phone1 from "../components/phone1"
 import Phone2 from "../components/phone2"
 import Phone3 from "../components/phone3"
@@ -11,17 +8,11 @@ import Phone4 from "../components/phone4"
 import styled from "@emotion/styled"
 import ArrowLeft from "../images/handleft.svg"
 import ArrowRight from "../images/handright.svg"
-
-//const Phone1 = React.lazy(() => import("../components/phone1"))
-//const Phone2 = React.lazy(() => import("../components/phone2"))
-//const Phone3 = React.lazy(() => import("../components/phone3"))
-//const Phone4 = React.lazy(() => import("../components/phone4"))
-//const IconsDark = React.lazy(() => import("../components/iconsDark"))
 const IconsLight = React.lazy(() => import("../components/iconsLight"))
 const IconsDarkPop = React.lazy(() => import("../components/iconsDarkPop"))
 const IconsLightPop = React.lazy(() => import("../components/iconsLightPop"))
 
-export default class AsNavFor extends Component {
+export default class LazyLoad extends Component {
   constructor(props) {
     super(props)
     this.state = {
