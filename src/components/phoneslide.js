@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import Slider from "react-slick"
 import IconsDark from "../components/iconsDark"
-import IconsLight from "../components/iconsLight"
-import IconsDarkPop from "../components/iconsDarkPop"
-import IconsLightPop from "../components/iconsLightPop"
+//import IconsLight from "../components/iconsLight"
+//import IconsDarkPop from "../components/iconsDarkPop"
+//import IconsLightPop from "../components/iconsLightPop"
 import Phone1 from "../components/phone1"
 import Phone2 from "../components/phone2"
 import Phone3 from "../components/phone3"
@@ -17,9 +17,9 @@ import ArrowRight from "../images/handright.svg"
 //const Phone3 = React.lazy(() => import("../components/phone3"))
 //const Phone4 = React.lazy(() => import("../components/phone4"))
 //const IconsDark = React.lazy(() => import("../components/iconsDark"))
-//const IconsLight = React.lazy(() => import("../components/iconsLight"))
-//const IconsDarkPop = React.lazy(() => import("../components/iconsDarkPop"))
-//const IconsLightPop = React.lazy(() => import("../components/iconsLightPop"))
+const IconsLight = React.lazy(() => import("../components/iconsLight"))
+const IconsDarkPop = React.lazy(() => import("../components/iconsDarkPop"))
+const IconsLightPop = React.lazy(() => import("../components/iconsLightPop"))
 
 export default class AsNavFor extends Component {
   constructor(props) {
@@ -80,7 +80,7 @@ export default class AsNavFor extends Component {
       arrows: false,
       fade: true,
     }
-
+    const isSSR = typeof window === "undefined"
     return (
       <FlexContainer>
         <FlexBlock1>
@@ -105,17 +105,29 @@ export default class AsNavFor extends Component {
                 </Slide>
                 <Slide>
                   <IconGrid>
-                    <IconsLightPop />
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsLightPop />
+                      </React.Suspense>
+                    )}
                   </IconGrid>
                 </Slide>
                 <Slide>
                   <IconGrid>
-                    <IconsDark />
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsDark />
+                      </React.Suspense>
+                    )}
                   </IconGrid>
                 </Slide>
                 <Slide>
                   <IconGrid>
-                    <IconsLight />
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsLight />
+                      </React.Suspense>
+                    )}
                   </IconGrid>
                 </Slide>
               </Slider>
