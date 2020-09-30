@@ -8,7 +8,7 @@ const Phone2 = ({ className }) => {
     query {
       placeholderImage: file(relativePath: { eq: "poplight.png" }) {
         childImageSharp {
-          fixed(width: 340, quality: 100) {
+          fixed(width: 340, quality: 90) {
             ...GatsbyImageSharpFixed_noBase64
           }
         }
