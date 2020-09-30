@@ -23,10 +23,10 @@ export default function Home() {
           <React.Suspense fallback={<Loader />}>
             <PhoneSlide />
             <Instructions />
-            <OurStory />
-            <Contact />
           </React.Suspense>
         )}
+        <OurStory />
+        <Contact />
       </Layout>
     </>
   )
