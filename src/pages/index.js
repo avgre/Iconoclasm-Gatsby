@@ -22,11 +22,11 @@ export default function Home() {
         {!isSSR && (
           <React.Suspense fallback={<Loader />}>
             <PhoneSlide />
+            <Instructions />
+            <OurStory />
+            <Contact />
           </React.Suspense>
         )}
-        <Instructions />
-        <OurStory />
-        <Contact />
       </Layout>
     </>
   )
