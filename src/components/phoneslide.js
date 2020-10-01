@@ -115,24 +115,6 @@ export default class LazyLoad extends Component {
                   <IconGrid>
                     {!isSSR && (
                       <React.Suspense fallback={<div />}>
-                        <IconsDark />
-                      </React.Suspense>
-                    )}
-                  </IconGrid>
-                </Slide>
-                <Slide>
-                  <IconGrid>
-                    {!isSSR && (
-                      <React.Suspense fallback={<div />}>
-                        <IconsLight />
-                      </React.Suspense>
-                    )}
-                  </IconGrid>
-                </Slide>
-                <Slide>
-                  <IconGrid>
-                    {!isSSR && (
-                      <React.Suspense fallback={<div />}>
                         <IconsSilver />
                       </React.Suspense>
                     )}
@@ -143,6 +125,24 @@ export default class LazyLoad extends Component {
                     {!isSSR && (
                       <React.Suspense fallback={<div />}>
                         <IconsGold />
+                      </React.Suspense>
+                    )}
+                  </IconGrid>
+                </Slide>
+                <Slide>
+                  <IconGrid>
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsDark />
+                      </React.Suspense>
+                    )}
+                  </IconGrid>
+                </Slide>
+                <Slide>
+                  <IconGrid>
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsLight />
                       </React.Suspense>
                     )}
                   </IconGrid>
@@ -193,7 +193,7 @@ export default class LazyLoad extends Component {
                 </Text>
                 <FlexModule>
                   <Price>$15</Price>
-                  <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
+                  <Buy href="https://gum.co/Sblhc">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
               <Slide2>
