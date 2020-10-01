@@ -60,13 +60,13 @@ export default class LazyLoad extends Component {
       } else if (slideIndex === 1) {
         return <Phone2 />
       } else if (slideIndex === 2) {
-        return <Phone4 />
-      } else if (slideIndex === 3) {
-        return <Phone3 />
-      } else if (slideIndex === 4) {
         return <Phone6 />
-      } else {
+      } else if (slideIndex === 3) {
         return <Phone5 />
+      } else if (slideIndex === 4) {
+        return <Phone4 />
+      } else {
+        return <Phone3 />
       }
     }
     console.log(this.state.slideIndex)
@@ -185,6 +185,30 @@ export default class LazyLoad extends Component {
                 </FlexModule>
               </Slide2>
               <Slide2>
+                <Title>A Bit Bougee - Silver</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
+                <Text>
+                  Worth it's weight in gold/silver/black/white.
+                  <br />A simple two-tone icon set.
+                </Text>
+                <FlexModule>
+                  <Price>$15</Price>
+                  <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
+                </FlexModule>
+              </Slide2>
+              <Slide2>
+                <Title>A Bit Bougee - Gold</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
+                <Text>
+                  Worth it's weight in gold/silver/black/white.
+                  <br />A simple two-tone icon set.
+                </Text>
+                <FlexModule>
+                  <Price>$15</Price>
+                  <Buy href="https://gum.co/Sblhc">Take My Money</Buy>
+                </FlexModule>
+              </Slide2>
+              <Slide2>
                 <Title>Matter of Minimalism - Noir</Title>
                 <Title2>High-res iOS 14 icon set</Title2>
                 <Text>
@@ -208,30 +232,6 @@ export default class LazyLoad extends Component {
                 <FlexModule>
                   <Price>$10</Price>
                   <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
-                </FlexModule>
-              </Slide2>
-              <Slide2>
-                <Title>A Bit Bougee - Silver</Title>
-                <Title2>High-res iOS 14 icon set</Title2>
-                <Text>
-                  Worth it's weight in gold/silver/black/white.
-                  <br />A simple two-tone icon set.
-                </Text>
-                <FlexModule>
-                  <Price>$15</Price>
-                  <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
-                </FlexModule>
-              </Slide2>
-              <Slide2>
-                <Title>A Bit Bougee - Gold</Title>
-                <Title2>High-res iOS 14 icon set</Title2>
-                <Text>
-                  Worth it's weight in gold/silver/black/white.
-                  <br />A simple two-tone icon set.
-                </Text>
-                <FlexModule>
-                  <Price>$15</Price>
-                  <Buy href="https://gum.co/Sblhc">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
             </Slider>
