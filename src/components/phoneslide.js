@@ -5,12 +5,16 @@ import Phone1 from "../components/phone1"
 import Phone2 from "../components/phone2"
 import Phone3 from "../components/phone3"
 import Phone4 from "../components/phone4"
+import Phone5 from "../components/phone5"
+import Phone6 from "../components/phone6"
 import styled from "@emotion/styled"
 import ArrowLeft from "../images/handleft.svg"
 import ArrowRight from "../images/handright.svg"
 const IconsLight = React.lazy(() => import("../components/iconsLight"))
 const IconsDarkPop = React.lazy(() => import("../components/iconsDarkPop"))
 const IconsLightPop = React.lazy(() => import("../components/iconsLightPop"))
+const IconsSilver = React.lazy(() => import("../components/iconsSilver"))
+const IconsGold = React.lazy(() => import("../components/iconsGold"))
 
 export default class LazyLoad extends Component {
   constructor(props) {
@@ -57,8 +61,12 @@ export default class LazyLoad extends Component {
         return <Phone2 />
       } else if (slideIndex === 2) {
         return <Phone4 />
-      } else {
+      } else if (slideIndex === 3) {
         return <Phone3 />
+      } else if (slideIndex === 4) {
+        return <Phone6 />
+      } else {
+        return <Phone5 />
       }
     }
     console.log(this.state.slideIndex)
@@ -117,6 +125,24 @@ export default class LazyLoad extends Component {
                     {!isSSR && (
                       <React.Suspense fallback={<div />}>
                         <IconsLight />
+                      </React.Suspense>
+                    )}
+                  </IconGrid>
+                </Slide>
+                <Slide>
+                  <IconGrid>
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsSilver />
+                      </React.Suspense>
+                    )}
+                  </IconGrid>
+                </Slide>
+                <Slide>
+                  <IconGrid>
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsGold />
                       </React.Suspense>
                     )}
                   </IconGrid>
@@ -182,6 +208,30 @@ export default class LazyLoad extends Component {
                 <FlexModule>
                   <Price>$10</Price>
                   <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
+                </FlexModule>
+              </Slide2>
+              <Slide2>
+                <Title>A Bit Bougee - Silver</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
+                <Text>
+                  Worth it's weight in gold/silver/black/white.
+                  <br />A simple two-tone icon set.
+                </Text>
+                <FlexModule>
+                  <Price>$15</Price>
+                  <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
+                </FlexModule>
+              </Slide2>
+              <Slide2>
+                <Title>A Bit Bougee - Gold</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
+                <Text>
+                  Worth it's weight in gold/silver/black/white.
+                  <br />A simple two-tone icon set.
+                </Text>
+                <FlexModule>
+                  <Price>$15</Price>
+                  <Buy href="https://gum.co/Sblhc">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
             </Slider>

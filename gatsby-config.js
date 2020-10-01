@@ -26,10 +26,6 @@ module.exports = {
             family: `Roboto Mono`,
             variants: [`100`, `200`, `400`, `700`],
           },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`],
-          },
         ],
       },
     },
@@ -38,6 +34,20 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gold`,
+        path: `${__dirname}/src/gold`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `silver`,
+        path: `${__dirname}/src/silver`,
       },
     },
     {
