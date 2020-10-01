@@ -185,7 +185,7 @@ export default class LazyLoad extends Component {
                 </FlexModule>
               </Slide2>
               <Slide2>
-                <Title>A Bit Bougee - Silver</Title>
+                <Title>A Bit Boujee - Silver</Title>
                 <Title2>High-res iOS 14 icon set</Title2>
                 <Text>
                   Worth it's weight in gold/silver/black/white.
@@ -197,7 +197,7 @@ export default class LazyLoad extends Component {
                 </FlexModule>
               </Slide2>
               <Slide2>
-                <Title>A Bit Bougee - Gold</Title>
+                <Title>A Bit Boujee - Gold</Title>
                 <Title2>High-res iOS 14 icon set</Title2>
                 <Text>
                   Worth it's weight in gold/silver/black/white.
