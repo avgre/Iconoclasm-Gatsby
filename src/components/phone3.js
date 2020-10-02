@@ -9,7 +9,7 @@ const Phone3 = ({ className }) => {
       placeholderImage: file(relativePath: { eq: "monodark.png" }) {
         childImageSharp {
           fixed(width: 340, height: 687, quality: 60) {
-            ...GatsbyImageSharpFixed_noBase64
+            ...GatsbyImageSharpFixed_withWebp_tracedSVG
           }
         }
       }
