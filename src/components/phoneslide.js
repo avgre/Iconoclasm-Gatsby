@@ -7,6 +7,8 @@ import Phone3 from "../components/phone3"
 import Phone4 from "../components/phone4"
 import Phone5 from "../components/phone5"
 import Phone6 from "../components/phone6"
+import Phone7 from "../components/phone7"
+import Phone8 from "../components/phone8"
 import styled from "@emotion/styled"
 import ArrowLeft from "../images/handleft.svg"
 import ArrowRight from "../images/handright.svg"
@@ -15,6 +17,8 @@ const IconsDarkPop = React.lazy(() => import("../components/iconsDarkPop"))
 const IconsLightPop = React.lazy(() => import("../components/iconsLightPop"))
 const IconsSilver = React.lazy(() => import("../components/iconsSilver"))
 const IconsGold = React.lazy(() => import("../components/iconsGold"))
+const IconsRainbow = React.lazy(() => import("../components/iconsRainbow"))
+const IconsRed = React.lazy(() => import("../components/iconsRed"))
 
 export default class LazyLoad extends Component {
   constructor(props) {
@@ -65,8 +69,12 @@ export default class LazyLoad extends Component {
         return <Phone5 />
       } else if (slideIndex === 4) {
         return <Phone4 />
-      } else {
+      } else if (slideIndex === 5) {
         return <Phone3 />
+      } else if (slideIndex === 6) {
+        return <Phone7 />
+      } else {
+        return <Phone8 />
       }
     }
     console.log(this.state.slideIndex)
@@ -143,6 +151,24 @@ export default class LazyLoad extends Component {
                     {!isSSR && (
                       <React.Suspense fallback={<div />}>
                         <IconsLight />
+                      </React.Suspense>
+                    )}
+                  </IconGrid>
+                </Slide>
+                <Slide>
+                  <IconGrid>
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsRainbow />
+                      </React.Suspense>
+                    )}
+                  </IconGrid>
+                </Slide>
+                <Slide>
+                  <IconGrid>
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsRed/>
                       </React.Suspense>
                     )}
                   </IconGrid>

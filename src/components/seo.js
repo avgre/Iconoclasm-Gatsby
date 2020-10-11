@@ -37,6 +37,10 @@ function SEO({ description, lang, meta, title }) {
           content: title,
         },
         {
+          name: `keywords`,
+          content: site.siteMetadata.keywords.join(","),
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },

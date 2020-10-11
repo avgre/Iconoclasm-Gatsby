@@ -16,7 +16,7 @@ export default function Home() {
   const isSSR = typeof window === "undefined"
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="iOS 14 Homescreen Icons" />
       <Layout>
         <About />
         {!isSSR && (
