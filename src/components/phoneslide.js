@@ -260,6 +260,33 @@ export default class LazyLoad extends Component {
                   <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
+
+              <Slide2>
+                <Title>Hues from the 6ix</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
+                <Text>
+                 Like opening a box of fresh crayons.
+                  <br />A multicolour icon set with white alt icons.
+                </Text>
+                <FlexModule>
+                  <Price>$10</Price>
+                  <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
+                </FlexModule>
+              </Slide2>
+              <Slide2>
+                <Title>Hues from the 6ix</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
+                <Text>
+                 Like opening a box of fresh crayons.
+                  <br />A multicolour icon set with white alt icons.
+                </Text>
+                <FlexModule>
+                  <Price>$10</Price>
+                  <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
+                </FlexModule>
+              </Slide2>
+
+
             </Slider>
           </Selection>
         </FlexBlock2>
