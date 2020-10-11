@@ -270,7 +270,7 @@ export default class LazyLoad extends Component {
                 </Text>
                 <FlexModule>
                   <Price>$10</Price>
-                  <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
+                  <Buy href="https://gum.co/aiUqF">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
               <Slide2>
@@ -282,7 +282,7 @@ export default class LazyLoad extends Component {
                 </Text>
                 <FlexModule>
                   <Price>$10</Price>
-                  <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
+                  <Buy href="https://gum.co/aiUqF">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
 
