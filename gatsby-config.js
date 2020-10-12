@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Iconoclasm for iOS 14`,
+    title: `Iconoclasm - Icon packs for iOS 14 homescreens`,
     description: `Iconoclasm is a collection of high res iOS 14 icon packs, to customize your iPhone homescreen and give your apps a new look.`,
     author: `AvGre Dev, Brain of Laraine`,
     url: "https://www.iconoclasm.shop",

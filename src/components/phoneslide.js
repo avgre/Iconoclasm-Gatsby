@@ -64,17 +64,17 @@ export default class LazyLoad extends Component {
       } else if (slideIndex === 1) {
         return <Phone2 />
       } else if (slideIndex === 2) {
-        return <Phone6 />
-      } else if (slideIndex === 3) {
-        return <Phone5 />
-      } else if (slideIndex === 4) {
-        return <Phone4 />
-      } else if (slideIndex === 5) {
-        return <Phone3 />
-      } else if (slideIndex === 6) {
         return <Phone7 />
-      } else {
+      } else if (slideIndex === 3) {
         return <Phone8 />
+      } else if (slideIndex === 4) {
+        return <Phone6 />
+      } else if (slideIndex === 5) {
+        return <Phone5 />
+      } else if (slideIndex === 6) {
+        return <Phone4 />
+      } else {
+        return <Phone3 />
       }
     }
     console.log(this.state.slideIndex)
@@ -123,6 +123,24 @@ export default class LazyLoad extends Component {
                   <IconGrid>
                     {!isSSR && (
                       <React.Suspense fallback={<div />}>
+                        <IconsRainbow />
+                      </React.Suspense>
+                    )}
+                  </IconGrid>
+                </Slide>
+                <Slide>
+                  <IconGrid>
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsRed/>
+                      </React.Suspense>
+                    )}
+                  </IconGrid>
+                </Slide>
+                <Slide>
+                  <IconGrid>
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
                         <IconsSilver />
                       </React.Suspense>
                     )}
@@ -155,24 +173,7 @@ export default class LazyLoad extends Component {
                     )}
                   </IconGrid>
                 </Slide>
-                <Slide>
-                  <IconGrid>
-                    {!isSSR && (
-                      <React.Suspense fallback={<div />}>
-                        <IconsRainbow />
-                      </React.Suspense>
-                    )}
-                  </IconGrid>
-                </Slide>
-                <Slide>
-                  <IconGrid>
-                    {!isSSR && (
-                      <React.Suspense fallback={<div />}>
-                        <IconsRed/>
-                      </React.Suspense>
-                    )}
-                  </IconGrid>
-                </Slide>
+                
               </Slider>
             </Container>
           </Overlay>
@@ -208,6 +209,30 @@ export default class LazyLoad extends Component {
                 <FlexModule>
                   <Price>$15</Price>
                   <Buy href="https://gum.co/WGTnH">Take My Money</Buy>
+                </FlexModule>
+              </Slide2>
+              <Slide2>
+                <Title>Hues from the 6ix</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
+                <Text>
+                 Like opening a box of fresh crayons.
+                  <br />A multicolour icon set with white alt icons.
+                </Text>
+                <FlexModule>
+                  <Price>$10</Price>
+                  <Buy href="https://gum.co/aiUqF">Take My Money</Buy>
+                </FlexModule>
+              </Slide2>
+              <Slide2>
+                <Title>Hues from the 6ix</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
+                <Text>
+                 Like opening a box of fresh crayons.
+                  <br />A multicolour icon set with white alt icons.
+                </Text>
+                <FlexModule>
+                  <Price>$10</Price>
+                  <Buy href="https://gum.co/aiUqF">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
               <Slide2>
@@ -261,30 +286,7 @@ export default class LazyLoad extends Component {
                 </FlexModule>
               </Slide2>
 
-              <Slide2>
-                <Title>Hues from the 6ix</Title>
-                <Title2>High-res iOS 14 icon set</Title2>
-                <Text>
-                 Like opening a box of fresh crayons.
-                  <br />A multicolour icon set with white alt icons.
-                </Text>
-                <FlexModule>
-                  <Price>$10</Price>
-                  <Buy href="https://gum.co/aiUqF">Take My Money</Buy>
-                </FlexModule>
-              </Slide2>
-              <Slide2>
-                <Title>Hues from the 6ix</Title>
-                <Title2>High-res iOS 14 icon set</Title2>
-                <Text>
-                 Like opening a box of fresh crayons.
-                  <br />A multicolour icon set with white alt icons.
-                </Text>
-                <FlexModule>
-                  <Price>$10</Price>
-                  <Buy href="https://gum.co/aiUqF">Take My Money</Buy>
-                </FlexModule>
-              </Slide2>
+              
 
 
             </Slider>
