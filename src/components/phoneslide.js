@@ -195,7 +195,7 @@ export default class LazyLoad extends Component {
                   association and recognizability. Just sayin’.
                 </Text>
                 <FlexModule>
-                  <Price>$15</Price>
+                  <Price>$10</Price>
                   <Buy href="https://gum.co/WGTnH">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
@@ -207,7 +207,7 @@ export default class LazyLoad extends Component {
                   association and recognizability. Just sayin’.
                 </Text>
                 <FlexModule>
-                  <Price>$15</Price>
+                  <Price>$10</Price>
                   <Buy href="https://gum.co/WGTnH">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
@@ -219,7 +219,7 @@ export default class LazyLoad extends Component {
                   <br />A multicolour icon set with white alt icons.
                 </Text>
                 <FlexModule>
-                  <Price>$10</Price>
+                  <Price>$5</Price>
                   <Buy href="https://gum.co/aiUqF">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
@@ -231,7 +231,7 @@ export default class LazyLoad extends Component {
                   <br />A multicolour icon set with white alt icons.
                 </Text>
                 <FlexModule>
-                  <Price>$10</Price>
+                  <Price>$5</Price>
                   <Buy href="https://gum.co/aiUqF">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
@@ -243,7 +243,7 @@ export default class LazyLoad extends Component {
                   <br />A simple two-tone icon set.
                 </Text>
                 <FlexModule>
-                  <Price>$15</Price>
+                  <Price>$10</Price>
                   <Buy href="https://gum.co/Sblhc">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
@@ -255,7 +255,7 @@ export default class LazyLoad extends Component {
                   <br />A simple two-tone icon set.
                 </Text>
                 <FlexModule>
-                  <Price>$15</Price>
+                  <Price>$10</Price>
                   <Buy href="https://gum.co/Sblhc">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
@@ -268,7 +268,7 @@ export default class LazyLoad extends Component {
                   <br />A simple black and white icon set.
                 </Text>
                 <FlexModule>
-                  <Price>$10</Price>
+                  <Price>$5</Price>
                   <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
@@ -281,7 +281,7 @@ export default class LazyLoad extends Component {
                   <br />A simple black and white icon set.
                 </Text>
                 <FlexModule>
-                  <Price>$10</Price>
+                  <Price>$5</Price>
                   <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
