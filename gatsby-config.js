@@ -4,7 +4,7 @@ module.exports = {
     description: `Iconoclasm is a collection of high res iOS 14 icon packs, to customize your iPhone homescreen and give your apps a new look.`,
     author: `AvGre Dev, Brain of Laraine`,
     url: "https://www.iconoclasm.shop",
-    keywords:"icons, iconoclasm, ios14, homescreen, app icons",
+    keywords: "icons, iconoclasm, ios14, homescreen, app icons",
   },
   plugins: [
     `gatsby-plugin-emotion`,
@@ -62,7 +62,7 @@ module.exports = {
         path: `${__dirname}/src/darkpop`,
       },
     },
-    
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -84,12 +84,19 @@ module.exports = {
         path: `${__dirname}/src/rainbow`,
       },
     },
-    
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `red`,
         path: `${__dirname}/src/red`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pastels`,
+        path: `${__dirname}/src/pastel`,
       },
     },
     {

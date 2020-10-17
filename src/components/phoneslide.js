@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Slider from "react-slick"
-import IconsDark from "../components/iconsDark"
+import IconsPastel from "../components/iconsPastel"
 import Phone1 from "../components/phone1"
 import Phone2 from "../components/phone2"
 import Phone3 from "../components/phone3"
@@ -9,9 +9,11 @@ import Phone5 from "../components/phone5"
 import Phone6 from "../components/phone6"
 import Phone7 from "../components/phone7"
 import Phone8 from "../components/phone8"
+import Phone9 from "../components/phone9"
 import styled from "@emotion/styled"
 import ArrowLeft from "../images/handleft.svg"
 import ArrowRight from "../images/handright.svg"
+const IconsDark = React.lazy(() => import("../components/iconsDark"))
 const IconsLight = React.lazy(() => import("../components/iconsLight"))
 const IconsDarkPop = React.lazy(() => import("../components/iconsDarkPop"))
 const IconsLightPop = React.lazy(() => import("../components/iconsLightPop"))
@@ -60,16 +62,18 @@ export default class LazyLoad extends Component {
     console.log(slideIndex)
     const renderPhone = () => {
       if (slideIndex === 0) {
-        return <Phone1 />
+        return <Phone9 />
       } else if (slideIndex === 1) {
-        return <Phone2 />
+        return <Phone1 />
       } else if (slideIndex === 2) {
-        return <Phone7 />
+        return <Phone2 />
       } else if (slideIndex === 3) {
-        return <Phone8 />
+        return <Phone7 />
       } else if (slideIndex === 4) {
-        return <Phone6 />
+        return <Phone8 />
       } else if (slideIndex === 5) {
+        return <Phone6 />
+      } else if (slideIndex === 6) {
         return <Phone5 />
       } else if (slideIndex === 6) {
         return <Phone4 />
@@ -107,7 +111,16 @@ export default class LazyLoad extends Component {
               >
                 <Slide>
                   <IconGrid>
-                    <IconsDarkPop />
+                    <IconsPastel />
+                  </IconGrid>
+                </Slide>
+                <Slide>
+                  <IconGrid>
+                    {!isSSR && (
+                      <React.Suspense fallback={<div />}>
+                        <IconsDarkPop />
+                      </React.Suspense>
+                    )}
                   </IconGrid>
                 </Slide>
                 <Slide>
@@ -132,7 +145,7 @@ export default class LazyLoad extends Component {
                   <IconGrid>
                     {!isSSR && (
                       <React.Suspense fallback={<div />}>
-                        <IconsRed/>
+                        <IconsRed />
                       </React.Suspense>
                     )}
                   </IconGrid>
@@ -173,7 +186,6 @@ export default class LazyLoad extends Component {
                     )}
                   </IconGrid>
                 </Slide>
-                
               </Slider>
             </Container>
           </Overlay>
@@ -187,6 +199,18 @@ export default class LazyLoad extends Component {
               swipeToSlide={true}
               {...settings2}
             >
+              <Slide2>
+                <Title>Pastel Party</Title>
+                <Title2>High-res iOS 14 icon set</Title2>
+                <Text>
+                  Pass those Pastels.
+                  <br />A toned down multicolour icon set.
+                </Text>
+                <FlexModule>
+                  <Price>$5</Price>
+                  <Buy href="https://gum.co/wBAGB">Take My Money</Buy>
+                </FlexModule>
+              </Slide2>
               <Slide2>
                 <Title>A Touch of Color - Dark</Title>
                 <Title2>High-res iOS 14 icon set</Title2>
@@ -215,7 +239,7 @@ export default class LazyLoad extends Component {
                 <Title>Hues from the 6ix</Title>
                 <Title2>High-res iOS 14 icon set</Title2>
                 <Text>
-                 Like opening a box of fresh crayons.
+                  Like opening a box of fresh crayons.
                   <br />A multicolour icon set with white alt icons.
                 </Text>
                 <FlexModule>
@@ -227,7 +251,7 @@ export default class LazyLoad extends Component {
                 <Title>Hues from the 6ix</Title>
                 <Title2>High-res iOS 14 icon set</Title2>
                 <Text>
-                 Like opening a box of fresh crayons.
+                  Like opening a box of fresh crayons.
                   <br />A multicolour icon set with white alt icons.
                 </Text>
                 <FlexModule>
@@ -285,10 +309,6 @@ export default class LazyLoad extends Component {
                   <Buy href="https://gum.co/DjTHa">Take My Money</Buy>
                 </FlexModule>
               </Slide2>
-
-              
-
-
             </Slider>
           </Selection>
         </FlexBlock2>
